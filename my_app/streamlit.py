@@ -40,16 +40,24 @@ def page3() :
 # def register():
 #   registration.user_registration(conn, c)
 
-def co():
+# def co():
 
-  connexion.logging(users, page1, page2, page3)
-
-
+#   connexion.logging(users, page1, page2, page3)
 
 
 
+page_names_to_funcs = {
 
-co()
+    "Prédiction avancée": page1,
+    "Analyse": page2,
+    "Metrics" : page3
+    }
+
+selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
+page_names_to_funcs[selected_page]()
+
+
+# co()
 
 
 
