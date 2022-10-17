@@ -1,0 +1,15 @@
+artifact_uri: /Users/hugofugeray/Desktop/diabetCO/mlflow/mlruns/0/07f5b27ae18b40b79b353b400c27fe73/artifacts
+end_time: 1664198634174
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 07f5b27ae18b40b79b353b400c27fe73
+run_uuid: 07f5b27ae18b40b79b353b400c27fe73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1664198630181
+status: 3
+tags: []
+user_id: hugofugeray
