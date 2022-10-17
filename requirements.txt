@@ -1,4 +1,4 @@
 streamlit 
 dnspython
 streamlit_authenticator
-dotenv
+python-dotenv
