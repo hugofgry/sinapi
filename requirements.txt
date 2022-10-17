@@ -4,3 +4,9 @@ streamlit_authenticator
 python-dotenv
 seaborn
 psycopg2
+scikit-learn
+pandas
+requests
+matplotlib
+numpy
+scikit-plot
