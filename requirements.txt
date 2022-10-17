@@ -2,3 +2,7 @@ streamlit
 dnspython
 streamlit_authenticator
 python-dotenv
+seaborn
+PIL
+pathlib
+psycopg2
