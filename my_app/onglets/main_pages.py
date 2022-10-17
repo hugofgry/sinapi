@@ -16,7 +16,7 @@ def fetch(session, url):
 
 def main_page():
 
-    image = Image.open('image/diabete-type2.jpeg')
+    image = Image.open('my_app/image/diabete-type2.jpeg')
     st.image(image)
     st.title("Prédiagnostique d'un diabète")
     session = requests.Session()

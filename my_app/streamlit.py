@@ -15,10 +15,10 @@ from onglets import page_3
 
 
 
-conn, c = dbapp.connect_app('../credentials.env')
+conn, c = dbapp.connect_app('credentials.env')
 users = dbapp.get_data(c)
 
-dotenv_path = Path('../credentials.env')
+dotenv_path = Path('credentials.env')
 load_dotenv(dotenv_path=dotenv_path)
 data = os.getenv('CSV')
 
