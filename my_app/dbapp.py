@@ -4,18 +4,16 @@ import os
 from dotenv import load_dotenv
 from pathlib import Path
 
-def connect_app(path):
+def connect_app():
 
-  dotenv_path = Path(path)
-  load_dotenv(dotenv_path=dotenv_path)
 
 
   conn = psp.connect(
-            database=os.getenv('DATABASE'),
-            user = os.getenv('USER'),
-            password = os.getenv('PASSWORD'),
-            host = os.getenv('HOST'),
-            port = os.getenv('PORT')
+            database="ddjssp3av7n08u",
+            user = "gdtbovqaxnpwcw",
+            password = "403a6bfbbb1a897e2be9d0df66baef3e48d1bd260afd6f839e1f3d7d3f60a1fe",
+            host = "ec2-44-209-57-4.compute-1.amazonaws.com",
+            port = "5432"
         )
   c = conn.cursor()
 

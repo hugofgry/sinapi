@@ -15,51 +15,42 @@ from onglets import page_3
 
 
 
-# conn, c = dbapp.connect_app('credentials.env')
-# users = dbapp.get_data(c)
+conn, c = dbapp.connect_app()
+users = dbapp.get_data(c)
 
-# dotenv_path = Path('credentials.env')
-# load_dotenv(dotenv_path=dotenv_path)
-# data = os.getenv('CSV')
-
-
-# def page1() :
-#   main_pages.main_page()
+dotenv_path = Path('credentials.env')
+load_dotenv(dotenv_path=dotenv_path)
+data = "archive/diabetes_binary_health_indicators_BRFSS2015.csv"
 
 
-
-# def page2():
-
-#   pages_2.page2(data)
+def page1() :
+  main_pages.main_page()
 
 
 
-# def page3() :
-#   page_3.page3(data)
+def page2():
 
-# # def register():
-# #   registration.user_registration(conn, c)
-
-# # def co():
-
-# #   connexion.logging(users, page1, page2, page3)
+  pages_2.page2(data)
 
 
 
-# page_names_to_funcs = {
+def page3() :
+  page_3.page3(data)
 
-#     "Prédiction avancée": page1,
-#     "Analyse": page2,
-#     "Metrics" : page3
-#     }
+# def register():
+#   registration.user_registration(conn, c)
 
-# selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
-# page_names_to_funcs[selected_page]()
+def co():
 
-
-# co()
+  connexion.logging(users, page1, page2, page3)
 
 
-st.write('hello')
+
+
+
+co()
+
+
+
 
 
