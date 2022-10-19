@@ -119,11 +119,11 @@ def main_page():
             time.sleep(0.01)
             my_bar.progress(percent_complete + 1)
 
-        if data == "0":
+        if data == "0.0":
 
            st.write("Pas de diabètes")
 
-        elif data == "1":
+        elif data == "1.0":
           st.warning('Vous avez un diabète, allez consulter un medecin !', icon="⚠️")
 
           st.info(f'Vous pouvez prendre rdv sur : https://www.doctolib.fr', icon="ℹ️")
